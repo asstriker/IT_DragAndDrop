@@ -1,0 +1,128 @@
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background : white;
+}
+
+
+input{
+    box-shadow: 20px rgb(206, 33, 33);
+}
+
+
+nav{
+	width : 96%; 
+	overflow:hidden;
+	color : black; 
+	border:  5px red inset;  
+	padding:10px;
+	margin:5px; 
+	background-color:turquoise; 
+	justify-content:center;
+	align-items:center; 
+	
+	
+} 
+
+ul {
+ 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+  white-space:nowrap;
+  background-color: turquoise;
+}
+
+li {
+  float: left; 
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none; 
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box-container{
+    height: 75vh;
+    overflow: auto; 
+}
+ 
+ .box-container table{
+	 margin: 1rem auto;
+ }
+	
+.table-column{
+    width: 150px;
+    min-height: 150px;
+    height: inherit;
+}
+
+td{ align:center;
+    border: 3px inset ; 
+	background-color:red;  
+	border-radius:10px;
+	margin:10px; 
+	transition: border 500ms ease-in-out, padding-left 500ms ease-in-out;
+    
+} 
+td:hover {
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #00ff99; 
+  border-right: 0.5rem solid #00ff99;  
+  border-top: 0.5rem solid #00ff99; 
+  border-bottom: 0.5rem solid #00ff99;  
+}
+
+#tiles-container{
+    /*display: flex;*/
+    overflow-x: scroll;
+    flex-wrap: wrap; 
+	border:outset;
+    position: fixed;
+    height: 30vh;
+    width: 97vw;
+    bottom: 0;
+    background-color: turquoise;
+}
+.tile{
+    width: 100px;
+    height: 40px;
+    border: 4px outset red; 
+	border-radius:5px 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    margin: 5px 10px; 
+	background-color:turquoise; 
+	transition: border 500ms ease-in-out, padding-left 500ms ease-in-out;
+}
+ .tile hover {
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #00ff99; 
+  border-right: 0.5rem solid #00ff99;  
+  border-top: 0.5rem solid #00ff99; 
+  border-bottom: 0.5rem solid #00ff99;  
+}
+
+
+input{
+    width: 80px;
+}
+
+.lockable{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.non-editable p{
+    margin: 3px;
+}
+
+button{
+	float:right; 
+    border:3px inset; 
+}  
